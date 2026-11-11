@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>chris harrison - Concept 01</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>chris harrison</h1>
+    <nav><a href="#projects">Projects</a> <a href="#about">About</a> <button id="themeBtn" aria-label="Toggle theme">Dark</button></nav>
+  </header>
+  <main>
+    <section id="projects" class="panel">
+      <h2>Projects</h2>
+      <div class="tabs" role="tablist" aria-label="Project tabs">
+        <button class="tab active" data-tab="tab1" role="tab" aria-selected="true">Overview</button>
+        <button class="tab" data-tab="tab2" role="tab" aria-selected="false">Skills</button>
+        <button class="tab" data-tab="tab3" role="tab" aria-selected="false">Contact</button>
+      </div>
+      <div class="tabpanels">
+        <section id="tab1" class="tabpanel" aria-labelledby="Overview" role="tabpanel">A concise portfolio with cards. Hover to lift.</section>
+        <section id="tab2" class="tabpanel" aria-labelledby="Skills" role="tabpanel">HTML, CSS, JS, accessibility, responsive design.</section>
+        <section id="tab3" class="tabpanel" aria-labelledby="Contact" role="tabpanel"><form id="contactForm" novalidate>
+          <label>Name<input name="name" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Message<textarea name="msg" required></textarea></label>
+          <button type="submit">Send</button>
+          <p class="note" id="formNote"></p>
+        </form></section>
+      </div>
+    </section>
+    <section id="about" class="panel">
+      <h2>About</h2>
+      <p>Minimal, fast and accessible single-page demo.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
